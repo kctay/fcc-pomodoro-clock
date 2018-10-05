@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Clock</title>
+
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+<link href='https://fonts.googleapis.com/css?family=Londrina Solid' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+<audio id="beep" src="http://www.gravomaster.com/alarm/sounds/ring1.wav" type="audio/mpeg"></audio>
+
+
+<div>
+  <div id="counter-display">
+
+    <div id="time-left">25:00</div>
+  </div>
+  <div id="clock-body">
+    <div id="break-div">
+      <div id="break-label">Break Length</div>
+      <a href="#" id="break-decrement">-</a>
+      <h2 id="break-length">5</h2>
+      <a href="#" id="break-increment">+</a>
+    </div>
+    <div id="misc-buttons">
+      <div id="timer-label">Session</div>
+      <a href="#" class="button" id="start_stop">Start Stop</a>
+      <a href="#" class="button" id="reset">Reset</a>
+    </div>
+
+    <div id="session-div">
+      <div id="session-label">Session Length</div>
+      <a href="#" id="session-decrement">-</a>
+      <h2 id="session-length">25</h2>
+      <a href="#" id="session-increment">+</a>
+    </div>
+  </div>
+  <div id="title">Pomodoro Doraemon Clock</div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

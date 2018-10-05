@@ -1,0 +1,128 @@
+html, body {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+body {
+  background-image: url("https://www.freepngimg.com/download/doraemon/35147-6-doraemon-file.png");
+  background-color: #f9ccca;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: 855px;
+  background-repeat: no-repeat;
+  background-image: url("https://www.freepngimg.com/download/doraemon/35147-6-doraemon-file.png"), linear-gradient(to right,#f9ccca,lightblue,skyblue,lightblue,#f9ccca);
+}
+#title {
+  position: relative;
+  top: 355px;
+  font-size: 12px;
+  font-weight: bold;
+  color: purple;
+  letter-spacing: 5px;
+}
+#timer-label {
+  position: relative;
+  font-size: 28px;
+  font-family: 'Londrina Solid';
+}
+#time-left {
+  position: fixed;
+  margin-left: 131px;
+  margin-top: 100px;
+  width: 82px;
+  height: 23px;
+  line-height: 0.6;
+  font-family: 'Share Tech Mono';
+  font-size: 33px;
+  background-color: white;
+}
+#clock-body{
+  display: flex;
+  position: relative;
+  top: 228px;
+  width: auto;
+  height: 150px;
+  background-color: lightgrey;
+  opacity: 0.95;
+  border: 2px solid #010101;
+  border-radius: 5px;
+  box-shadow: 3px 5px 8px darkslategrey;;
+  font-family: 'Londrina Solid';
+}
+#break-div, #session-div {
+  width: 120px;
+
+}
+#session-label, #break-label {
+  font-size: 24px;
+  line-height: 100%;
+  margin-top: 40px;
+  margin-bottom: 8px;
+}
+#session-length, #break-length {
+  display: inline-block;
+  width: 35px;
+  font-size: 25px;
+}
+#break-decrement, #break-increment, #session-decrement, #session-increment {
+  display: inline-block;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 30%;
+  font-size: 20px;
+  border: 3px solid #fff;
+}
+#break-decrement, #session-decrement {
+  background-color: #E53030;
+}
+#break-increment, #session-increment {
+  background-color: #0EC518;
+}
+#break-decrement:hover, #break-increment:hover, #session-decrement:hover, #session-increment:hover {
+  text-decoration: none;
+  background: grey;
+  box-shadow: 0 -2px 0 3px darken(grey, 10%) inset, 0 5px 5px rgba(darken(grey, 40%), 0.17), 0 15px rgba(#fff, 0.32) inset;
+
+}
+
+#start_stop {
+  margin-top: 8px;
+
+}
+#misc-buttons {
+  width: 80px;
+}
+.button {
+  font-size: 22px;
+  padding: 5px;
+  margin: 5px;
+  display: block;
+  word-wrap: break-word;
+  line-height: 90%;
+  border-radius: 10px;
+  border: 2px solid white;
+  background-color: #108FE8;
+  color: white;
+}
+.button:hover {
+  text-decoration: none;
+  color: #108FE8;
+  background-color: white;
+  border: 2px solid #108FE8;
+}
+
+@media screen and (min-width: 500px) {
+  #clock-body {
+    transform: scale(1.1) translateX(0%) translateY(0%);
+    transition: transform 1.2s ease-in;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
